@@ -1,6 +1,13 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+  useMemo,
+} from "react";
 import {
   CookiePreferences,
   DEFAULT_COOKIE_PREFERENCES,
@@ -8,7 +15,7 @@ import {
   saveStoredCookiePreferences,
 } from "@/lib/cookieConsent";
 
-interface CookieConsentContextType {
+export interface CookieConsentContextType {
   preferences: CookiePreferences;
   isBannerVisible: boolean;
   isSettingsOpen: boolean;
@@ -19,9 +26,18 @@ interface CookieConsentContextType {
   savePreferences: (custom: { analytics: boolean; marketing: boolean }) => void;
 }
 
-const CookieConsentContext = createContext<CookieConsentContextType | undefined>(
-  undefined
-);
+const fallbackContext: CookieConsentContextType = {
+  preferences: DEFAULT_COOKIE_PREFERENCES,
+  isBannerVisible: false,
+  isSettingsOpen: false,
+  openSettings: () => {},
+  closeSettings: () => {},
+  acceptAll: () => {},
+  rejectNonEssential: () => {},
+  savePreferences: () => {},
+};
+
+const CookieConsentContext = createContext<CookieConsentContextType>(fallbackContext);
 
 export function CookieConsentProvider({
   children,
@@ -33,10 +49,8 @@ export function CookieConsentProvider({
   );
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
     const stored = getStoredCookiePreferences();
     if (stored && stored.answered) {
       setPreferences(stored);
@@ -99,35 +113,37 @@ export function CookieConsentProvider({
     []
   );
 
-  // Prevent SSR flicker before hydration
-  if (!isMounted) {
-    return <>{children}</>;
-  }
+  const contextValue = useMemo(
+    () => ({
+      preferences,
+      isBannerVisible,
+      isSettingsOpen,
+      openSettings,
+      closeSettings,
+      acceptAll,
+      rejectNonEssential,
+      savePreferences,
+    }),
+    [
+      preferences,
+      isBannerVisible,
+      isSettingsOpen,
+      openSettings,
+      closeSettings,
+      acceptAll,
+      rejectNonEssential,
+      savePreferences,
+    ]
+  );
 
   return (
-    <CookieConsentContext.Provider
-      value={{
-        preferences,
-        isBannerVisible,
-        isSettingsOpen,
-        openSettings,
-        closeSettings,
-        acceptAll,
-        rejectNonEssential,
-        savePreferences,
-      }}
-    >
+    <CookieConsentContext.Provider value={contextValue}>
       {children}
     </CookieConsentContext.Provider>
   );
 }
 
-export function useCookieConsent() {
+export function useCookieConsent(): CookieConsentContextType {
   const context = useContext(CookieConsentContext);
-  if (!context) {
-    throw new Error(
-      "useCookieConsent must be used within a CookieConsentProvider"
-    );
-  }
-  return context;
+  return context || fallbackContext;
 }
