@@ -4,6 +4,7 @@ import Image from "next/image";
 import { companyInfo } from "@/content/company";
 import { siteConfig } from "@/content/siteConfig";
 import { navigationItems } from "@/content/navigation";
+import { CookiePreferencesButton } from "@/components/cookies";
 import { Mail, Phone, MapPin, ExternalLink, Linkedin, Instagram } from "lucide-react";
 
 export function Footer() {
@@ -132,6 +133,9 @@ export function Footer() {
                 >
                   Terms of Use
                 </Link>
+              </li>
+              <li>
+                <CookiePreferencesButton className="text-sm" />
               </li>
               <li>
                 <a

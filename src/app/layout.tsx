@@ -5,6 +5,7 @@ import { companyInfo } from "@/content/company";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { CookieConsentProvider, CookieConsent } from "@/components/cookies";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -93,9 +94,12 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="min-h-screen flex flex-col bg-avaas-cream text-slate-900 font-sans antialiased">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <CookieConsentProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <CookieConsent />
+        </CookieConsentProvider>
       </body>
     </html>
   );
