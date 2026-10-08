@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 249 246; /* #FAF9F6 */
+    --foreground: 15 23 42;    /* #0F172A */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FAF9F6;
+    color: #0F172A;
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #FF6B00;
+    color: #FFFFFF;
+  }
+
+  /* Accessible focus outline */
+  :focus-visible {
+    outline: 2px solid #FF6B00;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom Voice Wave Bar Animation */
+@keyframes waveBar {
+  0%, 100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-wave-1 { animation: waveBar 1.2s ease-in-out infinite 0.1s; }
+.animate-wave-2 { animation: waveBar 1.2s ease-in-out infinite 0.25s; }
+.animate-wave-3 { animation: waveBar 1.2s ease-in-out infinite 0.4s; }
+.animate-wave-4 { animation: waveBar 1.2s ease-in-out infinite 0.15s; }
+.animate-wave-5 { animation: waveBar 1.2s ease-in-out infinite 0.35s; }
+.animate-wave-6 { animation: waveBar 1.2s ease-in-out infinite 0.5s; }
+.animate-wave-7 { animation: waveBar 1.2s ease-in-out infinite 0.2s; }
+.animate-wave-8 { animation: waveBar 1.2s ease-in-out infinite 0.45s; }
+
+/* Subtle Grid Background */
+.bg-subtle-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+}
+
+.bg-dark-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
