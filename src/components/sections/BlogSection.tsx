@@ -22,11 +22,11 @@ export function BlogSection() {
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-avaas-orange/40 transition-all flex flex-col justify-between group"
+              className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-avaas-blue/40 transition-all flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">
-                  <span className="text-xs font-semibold text-avaas-orange uppercase tracking-wider bg-avaas-orange-light px-2.5 py-0.5 rounded-md">
+                  <span className="text-xs font-semibold text-avaas-blue uppercase tracking-wider bg-avaas-blue-light px-2.5 py-0.5 rounded-md">
                     {article.category}
                   </span>
                   <span className="text-xs text-slate-400 font-mono">
@@ -34,7 +34,7 @@ export function BlogSection() {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-avaas-navy mb-3 group-hover:text-avaas-orange transition-colors">
+                <h3 className="text-lg font-bold text-avaas-navy mb-3 group-hover:text-avaas-blue transition-colors">
                   {article.title}
                 </h3>
 
@@ -43,7 +43,7 @@ export function BlogSection() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 group-hover:text-avaas-orange transition-colors">
+              <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 group-hover:text-avaas-blue transition-colors">
                 <span>Read on AVAAS Blog</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </div>
@@ -60,7 +60,7 @@ export function BlogSection() {
             size="lg"
             className="shadow-sm hover:shadow-md"
           >
-            <BookOpen className="w-4 h-4 text-avaas-orange" />
+            <BookOpen className="w-4 h-4 text-avaas-blue" />
             <span>{blogContent.ctaText}</span>
             <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
           </Button>

@@ -16,19 +16,19 @@ export function Hero() {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Company Stage Pill */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-medium text-slate-700 mb-8">
-            <span className="w-2 h-2 rounded-full bg-avaas-orange" />
+            <span className="w-2 h-2 rounded-full bg-avaas-blue" />
             <span>{heroContent.badge}</span>
           </div>
 
           {/* Tagline */}
-          <p className="text-xs md:text-sm uppercase tracking-widest font-semibold text-avaas-orange mb-3">
+          <p className="text-xs md:text-sm uppercase tracking-widest font-semibold text-avaas-blue mb-3">
             {heroContent.tagline}
           </p>
 
           {/* Primary Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-avaas-navy leading-[1.1] mb-6">
-            Building the future of{" "}
-            <span className="text-avaas-orange">voice-first mobility</span>
+            Book Any Ride with{" "}
+            <span className="text-avaas-blue">Just Your Voice</span>
           </h1>
 
           {/* Supporting Statement */}
@@ -42,7 +42,7 @@ export function Hero() {
               href={heroContent.primaryCta.href}
               variant="primary"
               size="lg"
-              className="w-full sm:w-auto group shadow-md shadow-avaas-orange/15"
+              className="w-full sm:w-auto group shadow-md shadow-avaas-blue/15"
             >
               <span>{heroContent.primaryCta.label}</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
@@ -63,7 +63,7 @@ export function Hero() {
           <div className="w-full max-w-xl bg-white border border-slate-200 rounded-2xl p-6 shadow-sm mb-16">
             <div className="flex items-center justify-between gap-4 pb-3 mb-3 border-b border-slate-100">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-avaas-orange" />
+                <span className="w-2 h-2 rounded-full bg-avaas-blue" />
                 <span className="text-xs font-semibold text-slate-700 tracking-wide uppercase">
                   Conversational Voice Concept
                 </span>
@@ -74,7 +74,7 @@ export function Hero() {
             </div>
 
             <div className="py-2">
-              <VoiceWave variant="orange" size="md" barCount={22} />
+              <VoiceWave variant="blue" size="md" barCount={22} />
             </div>
 
             <div className="mt-3 pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
@@ -92,7 +92,7 @@ export function Hero() {
                 key={idx}
                 className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm"
               >
-                <div className="text-xs font-bold uppercase tracking-wider text-avaas-orange mb-1">
+                <div className="text-xs font-bold uppercase tracking-wider text-avaas-blue mb-1">
                   {pillar.title}
                 </div>
                 <div className="text-sm font-semibold text-avaas-navy">

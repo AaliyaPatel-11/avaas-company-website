@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 interface VoiceWaveProps {
   className?: string;
   barCount?: number;
-  variant?: "orange" | "navy" | "subtle" | "white";
+  variant?: "blue" | "navy" | "subtle" | "white";
   size?: "sm" | "md" | "lg";
 }
 
 export function VoiceWave({
   className,
   barCount = 16,
-  variant = "orange",
+  variant = "blue",
   size = "md",
 }: VoiceWaveProps) {
   const heights = [
@@ -36,7 +36,7 @@ export function VoiceWave({
   ];
 
   const variantColors = {
-    orange: "bg-avaas-orange",
+    blue: "bg-avaas-blue",
     navy: "bg-avaas-navy",
     subtle: "bg-slate-300",
     white: "bg-white/80",

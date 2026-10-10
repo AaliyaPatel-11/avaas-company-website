@@ -27,11 +27,11 @@ export const Button = React.forwardRef<
     ref
   ) => {
     const baseStyles =
-      "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-orange focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none active:scale-[0.98]";
+      "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-blue focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none active:scale-[0.98]";
 
     const variantStyles = {
       primary:
-        "bg-avaas-orange text-white hover:bg-avaas-orange-hover shadow-sm hover:shadow-md shadow-avaas-orange/20",
+        "bg-avaas-blue text-white hover:bg-avaas-blue-hover shadow-sm hover:shadow-md shadow-avaas-blue/20",
       secondary:
         "bg-white text-avaas-navy border border-slate-200 hover:bg-slate-50 hover:border-slate-300 shadow-sm",
       outline:

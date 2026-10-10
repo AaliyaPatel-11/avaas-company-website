@@ -26,7 +26,7 @@ export interface HeroContent {
 
 export const heroContent: HeroContent = {
   badge: "Early-Stage Technology Startup • info.avaas.me",
-  headline: "Building the future of voice-first mobility",
+  headline: "Book Any Ride with Just Your Voice",
   subheadline:
     "Call AVAAS and book a ride through a voice-first experience powered by AI. Making mobility accessible through natural phone conversations instead of complex smartphone apps.",
   tagline: "Your voice • Your ride • Anywhere • Anytime",

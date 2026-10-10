@@ -61,7 +61,7 @@ export function About() {
           {/* Voice-First Simplicity */}
           <div className="bg-gradient-to-br from-avaas-navy to-slate-900 text-white border border-slate-800 rounded-2xl p-8 shadow-md">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-avaas-orange/20 text-avaas-orange flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-avaas-blue/20 text-avaas-blue flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -80,15 +80,15 @@ export function About() {
 
             <div className="space-y-3 pt-4 border-t border-slate-700/60">
               <div className="flex items-center gap-2 text-xs text-slate-300 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-avaas-orange shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-avaas-blue shrink-0" />
                 <span>Zero app installations or sign-up friction</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-slate-300 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-avaas-orange shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-avaas-blue shrink-0" />
                 <span>Natural landmark speech resolution</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-slate-300 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-avaas-orange shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-avaas-blue shrink-0" />
                 <span>Works on any mobile phone or landline</span>
               </div>
             </div>
@@ -96,9 +96,9 @@ export function About() {
         </div>
 
         {/* Founder Origin Story */}
-        <div className="bg-avaas-cream border border-amber-200/50 rounded-2xl p-8 md:p-12 mb-20">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-12 mb-20">
           <div className="max-w-3xl mx-auto">
-            <div className="inline-block px-3 py-1 rounded-md bg-amber-100/80 text-amber-900 text-xs font-semibold uppercase tracking-wider mb-4">
+            <div className="inline-block px-3 py-1 rounded-md bg-avaas-blue-light text-avaas-blue-dark text-xs font-semibold uppercase tracking-wider mb-4 border border-avaas-blue/20">
               Origin & Insight
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-avaas-navy mb-6">
@@ -110,12 +110,12 @@ export function About() {
               ))}
             </div>
 
-            <div className="mt-8 p-5 bg-white rounded-xl border border-amber-200/80 flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-avaas-orange/10 text-avaas-orange flex items-center justify-center shrink-0 mt-0.5">
+            <div className="mt-8 p-5 bg-white rounded-xl border border-slate-200 flex items-start gap-4 shadow-sm">
+              <div className="w-8 h-8 rounded-full bg-avaas-blue/10 text-avaas-blue flex items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 className="w-4 h-4" />
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-avaas-orange block mb-1">
+                <span className="text-xs font-bold uppercase tracking-wider text-avaas-blue block mb-1">
                   The Core Realization
                 </span>
                 <p className="text-sm md:text-base font-medium text-slate-900">
@@ -143,9 +143,9 @@ export function About() {
               return (
                 <div
                   key={idx}
-                  className="bg-white border border-slate-200/90 rounded-xl p-6 shadow-sm hover:border-avaas-orange/50 transition-all hover:shadow-md"
+                  className="bg-white border border-slate-200/90 rounded-xl p-6 shadow-sm hover:border-avaas-blue/50 transition-all hover:shadow-md"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-avaas-orange-light text-avaas-orange flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-avaas-blue-light text-avaas-blue flex items-center justify-center mb-4">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h4 className="text-base font-bold text-avaas-navy mb-2">
@@ -169,7 +169,7 @@ export function About() {
             <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-4 text-slate-100">
               &ldquo;{aboutContent.quote.text}&rdquo;
             </p>
-            <span className="text-xs uppercase tracking-widest text-avaas-orange font-bold">
+            <span className="text-xs uppercase tracking-widest text-avaas-blue font-bold">
               — {aboutContent.quote.attribution}
             </span>
           </div>

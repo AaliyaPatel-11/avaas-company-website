@@ -20,12 +20,12 @@ const config: Config = {
           borderDark: "#1E293B",
           cream: "#FAF9F6",
           light: "#F8FAFC",
-          orange: {
-            DEFAULT: "#FF6B00",
-            hover: "#E05E00",
-            light: "#FFF4ED",
-            muted: "#FFEDD5",
-            dark: "#C2410C",
+          blue: {
+            DEFAULT: "#2563EB",
+            hover: "#1D4ED8",
+            light: "#EFF6FF",
+            muted: "#DBEAFE",
+            dark: "#1E40AF",
           },
         },
       },

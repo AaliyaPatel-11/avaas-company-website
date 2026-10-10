@@ -63,7 +63,7 @@ export function CookieSettingsModal() {
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-slate-800 bg-avaas-navyLight/50">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-avaas-orange/10 border border-avaas-orange/30 flex items-center justify-center text-avaas-orange">
+            <div className="w-9 h-9 rounded-lg bg-avaas-blue/10 border border-avaas-blue/30 flex items-center justify-center text-avaas-blue">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
@@ -95,7 +95,7 @@ export function CookieSettingsModal() {
             cookie preferences below. For complete details, review our{" "}
             <Link
               href="/privacy"
-              className="text-avaas-orange hover:underline font-medium"
+              className="text-avaas-blue hover:underline font-medium"
               onClick={closeSettings}
             >
               Privacy Policy
@@ -103,7 +103,7 @@ export function CookieSettingsModal() {
             and{" "}
             <Link
               href="/terms"
-              className="text-avaas-orange hover:underline font-medium"
+              className="text-avaas-blue hover:underline font-medium"
               onClick={closeSettings}
             >
               Terms of Use
@@ -139,7 +139,7 @@ export function CookieSettingsModal() {
             <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3">
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-2.5">
-                  <BarChart3 className="w-4 h-4 text-avaas-orange" />
+                  <BarChart3 className="w-4 h-4 text-avaas-blue" />
                   <span className="font-semibold text-white text-sm">
                     Analytics Cookies
                   </span>
@@ -156,7 +156,7 @@ export function CookieSettingsModal() {
                     className="sr-only peer"
                     aria-label="Toggle Analytics Cookies"
                   />
-                  <div className="w-11 h-6 bg-slate-800 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-avaas-orange/40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-avaas-orange"></div>
+                  <div className="w-11 h-6 bg-slate-800 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-avaas-blue/40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-avaas-blue"></div>
                 </label>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed">
@@ -170,7 +170,7 @@ export function CookieSettingsModal() {
             <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3">
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-2.5">
-                  <Target className="w-4 h-4 text-amber-400" />
+                  <Target className="w-4 h-4 text-avaas-blue" />
                   <span className="font-semibold text-white text-sm">
                     Marketing Cookies
                   </span>
@@ -187,7 +187,7 @@ export function CookieSettingsModal() {
                     className="sr-only peer"
                     aria-label="Toggle Marketing Cookies"
                   />
-                  <div className="w-11 h-6 bg-slate-800 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-avaas-orange/40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-avaas-orange"></div>
+                  <div className="w-11 h-6 bg-slate-800 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-avaas-blue/40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-avaas-blue"></div>
                 </label>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed">
@@ -220,7 +220,7 @@ export function CookieSettingsModal() {
           <button
             type="button"
             onClick={handleSave}
-            className="w-full sm:w-auto px-5 py-2 rounded-lg text-xs font-semibold text-white bg-avaas-orange hover:bg-avaas-orange-hover shadow-sm transition-colors flex items-center justify-center gap-1.5"
+            className="w-full sm:w-auto px-5 py-2 rounded-lg text-xs font-semibold text-white bg-avaas-blue hover:bg-avaas-blue-hover shadow-sm transition-colors flex items-center justify-center gap-1.5"
           >
             <Check className="w-4 h-4" />
             Save Preferences

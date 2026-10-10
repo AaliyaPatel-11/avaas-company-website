@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
   badge?: string;
-  badgeVariant?: "orange" | "navy" | "outline" | "neutral";
+  badgeVariant?: "blue" | "navy" | "outline" | "neutral";
   title: string;
   subtitle?: string;
   align?: "left" | "center";
@@ -14,7 +14,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({
   badge,
-  badgeVariant = "orange",
+  badgeVariant = "blue",
   title,
   subtitle,
   align = "center",

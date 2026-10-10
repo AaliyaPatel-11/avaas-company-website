@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AVAAS — Voice-First Mobility",
     description:
-      "Building the future of voice-first mobility. Call AVAAS and book a ride through a voice-first experience powered by AI.",
+      "Book any ride with just your voice. Call AVAAS and book a ride through a voice-first experience powered by AI.",
     url: siteConfig.url,
     siteName: companyInfo.tradeName,
     locale: "en_US",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AVAAS — Voice-First Mobility",
     description:
-      "Building the future of voice-first mobility. Call AVAAS and book a ride through a voice-first experience powered by AI.",
+      "Book any ride with just your voice. Call AVAAS and book a ride through a voice-first experience powered by AI.",
     images: [siteConfig.ogImage],
   },
   robots: {

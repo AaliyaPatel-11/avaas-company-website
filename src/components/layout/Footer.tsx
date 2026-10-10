@@ -39,7 +39,7 @@ export function Footer() {
               &ldquo;{companyInfo.motto}&rdquo;
             </p>
 
-            <p className="text-xs text-avaas-orange font-medium tracking-wide">
+            <p className="text-xs text-avaas-blue font-medium tracking-wide">
               {companyInfo.tagline}
             </p>
 
@@ -50,7 +50,7 @@ export function Footer() {
                   href={siteConfig.links.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-orange hover:text-white flex items-center justify-center transition-colors text-slate-400"
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-blue hover:text-white flex items-center justify-center transition-colors text-slate-400"
                   aria-label="AVAAS LinkedIn Profile"
                 >
                   <Linkedin className="w-4 h-4" />
@@ -61,7 +61,7 @@ export function Footer() {
                   href={siteConfig.links.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-orange hover:text-white flex items-center justify-center transition-colors text-slate-400"
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-blue hover:text-white flex items-center justify-center transition-colors text-slate-400"
                   aria-label="AVAAS Instagram Profile"
                 >
                   <Instagram className="w-4 h-4" />
@@ -72,7 +72,7 @@ export function Footer() {
                   href={siteConfig.links.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-orange hover:text-white flex items-center justify-center transition-colors text-slate-400"
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-avaas-blue hover:text-white flex items-center justify-center transition-colors text-slate-400"
                   aria-label="AVAAS Facebook Page"
                 >
                   <span className="text-xs font-bold">f</span>
@@ -155,14 +155,14 @@ export function Footer() {
             </h3>
             <div className="space-y-3 text-xs text-slate-400">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-avaas-orange shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-avaas-blue shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
                   {companyInfo.registeredOffice.fullFormatted}
                 </p>
               </div>
 
               <div className="flex items-center gap-2 pt-1">
-                <Mail className="w-4 h-4 text-avaas-orange shrink-0" />
+                <Mail className="w-4 h-4 text-avaas-blue shrink-0" />
                 <a
                   href={`mailto:${companyInfo.contact.email}`}
                   className="hover:text-white transition-colors"
@@ -172,7 +172,7 @@ export function Footer() {
               </div>
 
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-avaas-orange shrink-0" />
+                <Phone className="w-4 h-4 text-avaas-blue shrink-0" />
                 <a
                   href={`tel:${companyInfo.contact.phone}`}
                   className="hover:text-white transition-colors"

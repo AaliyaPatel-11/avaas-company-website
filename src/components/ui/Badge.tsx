@@ -2,20 +2,20 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  variant?: "orange" | "navy" | "outline" | "success" | "neutral";
+  variant?: "blue" | "navy" | "outline" | "success" | "neutral";
   size?: "sm" | "md";
 }
 
 export function Badge({
   className,
-  variant = "orange",
+  variant = "blue",
   size = "md",
   children,
   ...props
 }: BadgeProps) {
   const variantStyles = {
-    orange:
-      "bg-avaas-orange-light text-avaas-orange-dark border-avaas-orange/20",
+    blue:
+      "bg-avaas-blue-light text-avaas-blue-dark border-avaas-blue/20",
     navy:
       "bg-avaas-navy/5 text-avaas-navy border-avaas-navy/15",
     outline:

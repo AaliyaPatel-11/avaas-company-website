@@ -37,7 +37,7 @@ export const companyInfo: CompanyInfo = {
   cin: "U62099TS2026PTC223870",
   motto: "Connecting the world through voice.",
   tagline: "Your voice • Your ride • Anywhere • Anytime",
-  positioning: "Building the future of voice-first mobility",
+  positioning: "Book Any Ride with Just Your Voice",
   contact: {
     email: "avaas.pvt@gmail.com",
     phone: "+916303850467",

@@ -24,7 +24,7 @@ export function CookieConsentBanner() {
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
             {/* Text and Icon */}
             <div className="flex items-start gap-3.5 sm:gap-4 flex-1">
-              <div className="w-10 h-10 rounded-xl bg-avaas-orange/10 border border-avaas-orange/20 flex items-center justify-center text-avaas-orange shrink-0 mt-0.5">
+              <div className="w-10 h-10 rounded-xl bg-avaas-blue/10 border border-avaas-blue/20 flex items-center justify-center text-avaas-blue shrink-0 mt-0.5">
                 <Cookie className="w-5 h-5" />
               </div>
               <div className="space-y-1.5">
@@ -49,7 +49,7 @@ export function CookieConsentBanner() {
               <button
                 type="button"
                 onClick={openSettings}
-                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-orange order-3 sm:order-1"
+                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-blue order-3 sm:order-1"
               >
                 <Settings2 className="w-4 h-4 text-slate-400" />
                 Cookie Settings
@@ -58,7 +58,7 @@ export function CookieConsentBanner() {
               <button
                 type="button"
                 onClick={rejectNonEssential}
-                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-white bg-slate-800 hover:bg-slate-700/90 border border-slate-600 hover:border-slate-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-orange order-2"
+                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-white bg-slate-800 hover:bg-slate-700/90 border border-slate-600 hover:border-slate-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-blue order-2"
               >
                 <X className="w-3.5 h-3.5 text-slate-400" />
                 Reject Non-Essential
@@ -67,7 +67,7 @@ export function CookieConsentBanner() {
               <button
                 type="button"
                 onClick={acceptAll}
-                className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-white bg-avaas-orange hover:bg-avaas-orange-hover shadow-sm shadow-avaas-orange/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-orange focus-visible:ring-offset-2 focus-visible:ring-offset-avaas-navy active:scale-[0.98] order-1 sm:order-3"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-white bg-avaas-blue hover:bg-avaas-blue-hover shadow-sm shadow-avaas-blue/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-avaas-blue focus-visible:ring-offset-2 focus-visible:ring-offset-avaas-navy active:scale-[0.98] order-1 sm:order-3"
               >
                 <Check className="w-4 h-4" />
                 Accept All

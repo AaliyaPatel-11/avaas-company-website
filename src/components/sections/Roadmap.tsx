@@ -20,12 +20,12 @@ export function Roadmap() {
               key={phase.phase}
               className={`rounded-2xl p-8 transition-all flex flex-col justify-between ${
                 phase.isCurrent
-                  ? "bg-white border-2 border-avaas-orange shadow-lg shadow-avaas-orange/5 relative"
+                  ? "bg-white border-2 border-avaas-blue shadow-lg shadow-avaas-blue/5 relative"
                   : "bg-white border border-slate-200 shadow-sm"
               }`}
             >
               {phase.isCurrent && (
-                <div className="absolute -top-3 left-8 bg-avaas-orange text-white text-[11px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-sm">
+                <div className="absolute -top-3 left-8 bg-avaas-blue text-white text-[11px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-sm">
                   Active Execution
                 </div>
               )}
@@ -38,7 +38,7 @@ export function Roadmap() {
                   <span
                     className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${
                       phase.isCurrent
-                        ? "bg-avaas-orange-light text-avaas-orange-dark border border-avaas-orange/20"
+                        ? "bg-avaas-blue-light text-avaas-blue-dark border border-avaas-blue/20"
                         : "bg-slate-100 text-slate-600"
                     }`}
                   >
@@ -63,7 +63,7 @@ export function Roadmap() {
                   <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-700">
                     <CheckCircle2
                       className={`w-4 h-4 shrink-0 mt-0.5 ${
-                        phase.isCurrent ? "text-avaas-orange" : "text-slate-400"
+                        phase.isCurrent ? "text-avaas-blue" : "text-slate-400"
                       }`}
                     />
                     <span>{item}</span>

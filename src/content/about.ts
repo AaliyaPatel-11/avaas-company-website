@@ -50,11 +50,11 @@ export const aboutContent: AboutContent = {
   originStory: {
     title: "The Insight Behind AVAAS",
     body: [
-      "The idea for AVAAS was inspired by observing daily-wage workers, elderly commuters, and everyday citizens standing at street corners trying to find transportation manually—often hailing autos and negotiating rides despite the widespread availability of smartphone-based ride-hailing services.",
-      "While smartphone ownership has grown rapidly, the complexity of app workflows remains an invisible wall for hundreds of millions.",
+      "AVAAS was born from observing daily commuters, seniors, and workers struggle with complex ride apps despite needing quick, reliable transit.",
+      "While smartphones are widespread, multi-screen app complexity remains a major barrier for hundreds of millions.",
     ],
     keyInsight:
-      "People may not always know how to navigate a multi-screen application, but they already know how to make a phone call.",
+      "People may struggle with complex mobile apps, but everyone knows how to make a phone call.",
   },
   targetAudience: [
     {

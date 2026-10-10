@@ -15,14 +15,14 @@ export default function PrivacyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-avaas-orange transition-colors mb-8"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-avaas-blue transition-colors mb-8"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Overview</span>
         </Link>
 
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-avaas-orange-light text-avaas-orange flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-avaas-blue-light text-avaas-blue flex items-center justify-center">
             <Shield className="w-5 h-5" />
           </div>
           <div>
@@ -35,8 +35,8 @@ export default function PrivacyPage() {
           </div>
         </div>
 
-        <div className="mt-6 p-4 rounded-xl bg-amber-50/70 border border-amber-200/80 text-xs text-amber-900 leading-relaxed mb-10">
-          <span className="font-semibold block mb-0.5">Notice</span>
+        <div className="mt-6 p-4 rounded-xl bg-avaas-blue-light/50 border border-avaas-blue/20 text-xs text-slate-800 leading-relaxed mb-10">
+          <span className="font-semibold block mb-0.5 text-avaas-navy">Notice</span>
           This is an official draft privacy policy for AVAAS SPEECH SYSTEMS PRIVATE LIMITED (CIN: {privacyPolicyContent.cin}).
           For data inquiries, contact {privacyPolicyContent.contactEmail}.
         </div>

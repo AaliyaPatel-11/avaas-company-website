@@ -7,12 +7,12 @@ export function Technology() {
   return (
     <section id="technology" className="py-20 md:py-32 bg-slate-900 text-white relative overflow-hidden bg-dark-grid">
       {/* Glow orb */}
-      <div className="absolute top-1/3 right-10 w-96 h-96 bg-avaas-orange/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-avaas-blue/15 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           badge={technologyContent.sectionBadge}
-          badgeVariant="orange"
+          badgeVariant="blue"
           title={technologyContent.heading}
           subtitle={technologyContent.subheading}
           dark
@@ -23,11 +23,11 @@ export function Technology() {
           {technologyContent.layers.map((layer) => (
             <div
               key={layer.number}
-              className="bg-slate-800/80 backdrop-blur border border-slate-700/80 rounded-2xl p-6 flex flex-col justify-between hover:border-avaas-orange/50 transition-colors"
+              className="bg-slate-800/80 backdrop-blur border border-slate-700/80 rounded-2xl p-6 flex flex-col justify-between hover:border-avaas-blue/50 transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-avaas-orange bg-avaas-orange/10 px-2.5 py-1 rounded-md border border-avaas-orange/20">
+                  <span className="text-xs font-mono font-bold text-avaas-blue bg-avaas-blue/10 px-2.5 py-1 rounded-md border border-avaas-blue/20">
                     LAYER {layer.number}
                   </span>
                   <span className="text-xs text-slate-400 font-medium">
@@ -47,7 +47,7 @@ export function Technology() {
               <div className="pt-4 border-t border-slate-700/60 space-y-2">
                 {layer.points.map((pt, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-400">
-                    <Check className="w-3.5 h-3.5 text-avaas-orange shrink-0" />
+                    <Check className="w-3.5 h-3.5 text-avaas-blue shrink-0" />
                     <span>{pt}</span>
                   </div>
                 ))}
@@ -59,7 +59,7 @@ export function Technology() {
         {/* Architecture Summary Banner */}
         <div className="bg-gradient-to-r from-slate-800 via-slate-800/90 to-slate-800 border border-slate-700 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-wider text-avaas-orange">
+            <span className="text-xs font-bold uppercase tracking-wider text-avaas-blue">
               {technologyContent.architectureSummary.badge}
             </span>
             <h4 className="text-lg md:text-xl font-bold text-white">

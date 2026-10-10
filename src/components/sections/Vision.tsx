@@ -44,17 +44,17 @@ export function Vision() {
           {/* Long Term */}
           <div className="bg-gradient-to-br from-avaas-navy to-slate-900 text-white border border-slate-800 rounded-2xl p-8 flex flex-col justify-between shadow-md">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-avaas-orange bg-avaas-orange/20 px-3 py-1 rounded-full inline-block mb-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-avaas-blue bg-avaas-blue/20 px-3 py-1 rounded-full inline-block mb-4">
                 {visionContent.distinction.tomorrow.tag}
               </span>
               <h3 className="text-2xl font-bold text-white mb-3">
                 {visionContent.distinction.tomorrow.title}
               </h3>
-              <p className="text-sm md:text-base text-slate-200 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-200 leading-relaxed mb-6">
                 {visionContent.distinction.tomorrow.description}
               </p>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-700 text-xs font-mono text-avaas-orange">
+            <div className="mt-6 pt-4 border-t border-slate-700 text-xs font-mono text-avaas-blue">
               Horizon: Everyday Vernacular Voice Interface
             </div>
           </div>
@@ -70,14 +70,14 @@ export function Vision() {
                 key={idx}
                 className={`rounded-xl p-6 border transition-all ${
                   isCore
-                    ? "bg-white border-avaas-orange shadow-md shadow-avaas-orange/5"
+                    ? "bg-white border-avaas-blue shadow-md shadow-avaas-blue/5"
                     : "bg-slate-50/60 border-slate-200/80"
                 }`}
               >
                 <div
                   className={`w-10 h-10 rounded-lg flex items-center justify-center mb-4 ${
                     isCore
-                      ? "bg-avaas-orange text-white"
+                      ? "bg-avaas-blue text-white"
                       : "bg-slate-200/80 text-slate-700"
                   }`}
                 >

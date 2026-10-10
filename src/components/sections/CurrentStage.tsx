@@ -6,7 +6,7 @@ import { Target, Activity } from "lucide-react";
 export function CurrentStage() {
   const statusColorMap: Record<string, string> = {
     "Active Focus": "bg-emerald-50 text-emerald-700 border-emerald-200",
-    "In Development": "bg-amber-50 text-amber-700 border-amber-200",
+    "In Development": "bg-avaas-blue-light text-avaas-blue-dark border-avaas-blue/20",
     Planned: "bg-slate-100 text-slate-600 border-slate-200",
   };
 
@@ -22,7 +22,7 @@ export function CurrentStage() {
         {/* Transparent Statement Card */}
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-10 mb-12 shadow-sm">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-avaas-orange-light text-avaas-orange flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-avaas-blue-light text-avaas-blue flex items-center justify-center shrink-0">
               <Activity className="w-5 h-5" />
             </div>
             <div>
@@ -70,7 +70,7 @@ export function CurrentStage() {
         {/* Grounded Execution Commitment */}
         <div className="bg-avaas-navy text-white rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Target className="w-6 h-6 text-avaas-orange shrink-0" />
+            <Target className="w-6 h-6 text-avaas-blue shrink-0" />
             <div>
               <h4 className="text-sm font-bold text-white">
                 {currentStageContent.commitment.title}

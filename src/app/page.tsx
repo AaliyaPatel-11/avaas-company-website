@@ -3,7 +3,6 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { WhyAvaas } from "@/components/sections/WhyAvaas";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { LocationIntelligence } from "@/components/sections/LocationIntelligence";
 import { Technology } from "@/components/sections/Technology";
 import { CurrentStage } from "@/components/sections/CurrentStage";
 import { Roadmap } from "@/components/sections/Roadmap";
@@ -18,7 +17,6 @@ export default function HomePage() {
       <About />
       <WhyAvaas />
       <HowItWorks />
-      <LocationIntelligence />
       <Technology />
       <CurrentStage />
       <Roadmap />

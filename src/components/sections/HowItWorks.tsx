@@ -27,14 +27,14 @@ export function HowItWorks() {
             return (
               <div
                 key={idx}
-                className="relative bg-slate-50 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-avaas-orange/40 hover:bg-white transition-all shadow-sm group"
+                className="relative bg-slate-50 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-avaas-blue/40 hover:bg-white transition-all shadow-sm group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="w-10 h-10 rounded-xl bg-avaas-orange text-white font-bold text-base flex items-center justify-center shadow-sm">
+                    <span className="w-10 h-10 rounded-xl bg-avaas-blue text-white font-bold text-base flex items-center justify-center shadow-sm">
                       {step.step}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center group-hover:text-avaas-orange transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center justify-center group-hover:text-avaas-blue transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
@@ -43,7 +43,7 @@ export function HowItWorks() {
                     {step.title}
                   </h3>
 
-                  <p className="text-sm font-semibold text-avaas-orange mb-3">
+                  <p className="text-sm font-semibold text-avaas-blue mb-3">
                     {step.summary}
                   </p>
 
@@ -57,10 +57,10 @@ export function HowItWorks() {
         </div>
 
         {/* Early Validation Notice Box */}
-        <div className="bg-amber-50/70 border border-amber-200/80 rounded-xl p-5 flex items-start gap-4">
-          <Info className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
-          <div className="text-xs md:text-sm text-amber-900 leading-relaxed">
-            <span className="font-semibold block mb-0.5">Product Development & Pilot Transparency</span>
+        <div className="bg-avaas-blue-light/50 border border-avaas-blue/20 rounded-xl p-5 flex items-start gap-4">
+          <Info className="w-5 h-5 text-avaas-blue-dark shrink-0 mt-0.5" />
+          <div className="text-xs md:text-sm text-slate-800 leading-relaxed">
+            <span className="font-semibold block mb-0.5 text-avaas-navy">Product Development & Pilot Transparency</span>
             {howItWorksContent.stageNote}
           </div>
         </div>

@@ -13,29 +13,12 @@ export interface StepItem {
   icon: "PhoneCall" | "Mic" | "Cpu" | "Car";
 }
 
-export interface LocationDemoStep {
-  stage: string;
-  label: string;
-  content: string;
-  meta?: string;
-}
-
 export interface HowItWorksContent {
   sectionBadge: string;
   heading: string;
   subheading: string;
   stageNote: string;
   steps: StepItem[];
-  locationIntelligence: {
-    heading: string;
-    subheading: string;
-    description: string;
-    demoSteps: LocationDemoStep[];
-    capabilities: Array<{
-      title: string;
-      description: string;
-    }>;
-  };
 }
 
 export const howItWorksContent: HowItWorksContent = {
@@ -79,48 +62,4 @@ export const howItWorksContent: HowItWorksContent = {
       icon: "Car",
     },
   ],
-  locationIntelligence: {
-    heading: "Conversational Location Intelligence",
-    subheading: "Resolving natural speech into precise geographic coordinates",
-    description:
-      "Passengers rarely speak in latitude and longitude or exact postal addresses. AVAAS bridges colloquial language with spatial intelligence, mapping natural descriptions to verified pickup spots.",
-    demoSteps: [
-      {
-        stage: "Input",
-        label: "Natural Spoken Voice",
-        content: '"I am standing near IKEA main entrance, Hitech City."',
-        meta: "Spoken Input (Audio Stream)",
-      },
-      {
-        stage: "Processing",
-        label: "AI Location Disambiguation",
-        content:
-          "Parsed Entity: IKEA Hyderabad (Store ID: HITEC-01) → Designated Passenger Gate 2",
-        meta: "Landmark & Context Engine",
-      },
-      {
-        stage: "Output",
-        label: "Confirmed Geographic Point",
-        content: "Pickup Point: Gate 2, IKEA, Mindspace Junction, HITEC City (17.4375° N, 78.3752° E)",
-        meta: "Dispatch Ready Coordinate",
-      },
-    ],
-    capabilities: [
-      {
-        title: "Landmark & POI Resolution",
-        description:
-          "Understands popular local landmarks, metro pillars, transit hubs, and commercial centers.",
-      },
-      {
-        title: "Colloquial Geography",
-        description:
-          "Interprets regional naming conventions and informal neighborhood references commonly used by residents.",
-      },
-      {
-        title: "Conversational Confirmation",
-        description:
-          "Verifies ambiguous pickup points by asking quick, natural follow-up questions during the call.",
-      },
-    ],
-  },
 };
